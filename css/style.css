@@ -1,0 +1,94 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Body Background and Fonts */
+body {
+    background-color: lightgray;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Get rid of underline on links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style navigation bar */
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #707070;
+}
+nav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+nav a.calltoaction:hover {
+    background-color: rgb(0, 120, 224);
+}
+nav a:hover {
+    background-color: #656565;
+}
+nav a.active {
+    background-color: #686868;
+}
+nav a.calltoaction {
+    background-color: #2699FB;
+}
+nav img.brand {
+    padding: 14px 16px;
+}
+
+/* Resonsive Design Navbar */
+@media screen and (max-width: 600px) {
+    nav nav.right, 
+    nav.li {
+        float: none;
+    }
+}
+
+/* Style Video */
+.VideoHeader {
+    width: 100%;
+    height: 60vh;
+    overflow:hidden;
+    display:block;
+}
+#video {
+    margin-top: -200px;
+    width: 100vw;
+}
+
+/* Footer */
+* {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 15vh;
+  background-color: #707070;
+  color: white;
+}
+.column i {
+    font-size: 3rem;
+}
+/* Clear floats after the columns */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
