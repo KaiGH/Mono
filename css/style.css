@@ -2,19 +2,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Body Background and Fonts */
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: lightgray;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 /* Get rid of underline on links */
 a {
     text-decoration: none;
     color: white;
 }
 
-/* Style navigation bar */
+/* Back to Top Button */
+a.top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background: #2699FB url("../asset/arrow.png") no-repeat center 43%;
+	border-radius: 30px;
+}
+
+/* Navbar Styling */
 nav {
     list-style-type: none;
     margin: 0;
@@ -43,25 +57,59 @@ nav a.calltoaction {
 nav img.brand {
     padding: 14px 16px;
 }
-
-/* Resonsive Design Navbar */
-@media screen and (max-width: 600px) {
-    nav nav.right, 
-    nav.li {
-        float: none;
+nav .icon {
+    display: none;
+  }
+/* Responsive Navbar */
+@media screen and (max-width: 720px) {
+    nav a {display: none;}
+    nav .icon {
+      float: right;
+      display: block;
+    }
+    nav.responsive {position: relative;}
+    nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
     }
 }
 
 /* Style Video */
 .VideoHeader {
     width: 100%;
-    height: 60vh;
+    max-height: 60vh;
     overflow:hidden;
     display:block;
 }
 #video {
-    margin-top: -200px;
     width: 100vw;
+}
+
+/* Section with Aside */
+.half {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+}
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 750px) {
+    .half {
+      width: 100%;
+      border-bottom: 1px solid #aaa;
+    }
 }
 
 /* Footer */
@@ -72,10 +120,10 @@ nav img.brand {
 .column {
   float: left;
   width: 33.33%;
-  padding: 10px;
-  height: 15vh;
+  padding: 50px;
   background-color: #707070;
   color: white;
+  text-align: center;
 }
 .column i {
     font-size: 3rem;
@@ -86,9 +134,19 @@ footer:after {
   display: table;
   clear: both;
 }
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Add margin to social so it matches */
+.social {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+/* Responsive layout footer */
+@media screen and (max-width: 1000px) {
   .column {
     width: 100%;
+    border-bottom: 1px solid #aaa;
+  }
+  .social {
+      margin-top: 0px;
+      margin-bottom: 5px;
   }
 }
