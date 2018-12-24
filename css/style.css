@@ -11,6 +11,9 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+* {
+    box-sizing: border-box;
+}
 /* Get rid of underline on links */
 a {
     text-decoration: none;
@@ -91,6 +94,41 @@ nav .icon {
     width: 100vw;
 }
 
+/* Footer */
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    background-color: #707070;
+    text-align: center;
+  }
+  .column i {
+      font-size: 3rem;
+  }
+  /* Clear floats after the columns */
+  footer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Add margin to social so it matches */
+  .social {
+      margin-top: 26px;
+      margin-bottom: 26px;
+  }
+  /* Responsive layout footer */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+      border-bottom: 1px solid #aaa;
+    }
+    .social {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+  }
+
 /* Section with Aside */
 .half {
     float: left;
@@ -115,40 +153,40 @@ section:after {
     }
 }
 
-/* Footer */
-* {
-  box-sizing: border-box;
+/* Section Background */
+.concept {
+    background: url("../asset/concept.jpg");
+    padding-top: 9vh;
+    padding-bottom: 9vh;
 }
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  background-color: #707070;
-  text-align: center;
+#rounded {
+    text-align: center;
+    border-radius: 25px;
+    background: #707070;
+    padding: 20px;
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
 }
-.column i {
-    font-size: 3rem;
+#rounded h1 {
+    margin-top: 0%;
 }
-/* Clear floats after the columns */
-footer:after {
-  content: "";
-  display: table;
-  clear: both;
+.button {
+    font-weight: bold;
+    background: #2699FB;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20vw;
 }
-/* Add margin to social so it matches */
-.social {
-    margin-top: 26px;
-    margin-bottom: 26px;
-}
-/* Responsive layout footer */
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 100%;
-    border-bottom: 1px solid #aaa;
-  }
-  .social {
-      margin-top: 0px;
-      margin-bottom: 5px;
-  }
+@media screen and (max-width: 750px) {
+    #rounded
+    {
+        width: 90vw;
+    }
+    .button {
+        max-width: 50vw;
+    }
 }
