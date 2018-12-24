@@ -6,8 +6,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: lightgray;
+    background-color: darkgray;
     margin: 0;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 /* Get rid of underline on links */
@@ -38,7 +39,6 @@ nav {
 }
 nav a {
     float: right;
-    color: white;
     text-align: center;
     padding: 14px 16px;
 }
@@ -96,9 +96,12 @@ nav .icon {
     float: left;
     width: 50%;
     padding: 40px;
-    background-color: darkgray;
-    color: white;
     text-align: center;
+}
+.half img {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
 }
 section:after {
     content: "";
@@ -122,7 +125,6 @@ section:after {
   width: 33.33%;
   padding: 50px;
   background-color: #707070;
-  color: white;
   text-align: center;
 }
 .column i {
