@@ -1,0 +1,44 @@
+/* Style Pointer */
+a:hover {
+    cursor: pointer;
+}
+
+/* Style Modals */
+.modalbox {
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+.modcontent {
+    background: #707070;
+}
+.modheader {
+    background: #2699FB;
+    padding: 10px;
+}
+.modbody {
+    padding: 10px;
+}
+
+/* Style Close Button */
+.close {
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+.close:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+/* Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}

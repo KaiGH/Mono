@@ -1,102 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Site Information -->
+        <title>BAC Mono - Discover</title>
+        <link rel="icon" href="asset/favicon.png">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
 
-<head>
-    <!-- Site Information -->
-    <title>BAC Mono - Discover</title>
-    <link rel="icon" href="asset/favicon.png">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+        <!-- Metadata -->
+        <meta name="description" content="Discover BAC Mono - Briggs Automotive Company's one of a kind supercar">
+        <meta name="keywords" content="bac, bac mono, discover bac, discover mono, briggs automotive company, briggs, car, supercar, gear">
 
-    <!-- Metadata -->
-    <meta name="description" content="Discover BAC Mono - Briggs Automotive Company's one of a kind supercar">
-    <meta name="keywords" content="bac, bac mono, discover bac, discover mono, briggs automotive company, briggs, car, supercar, gear">
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" 
+              href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" 
+              integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+              crossorigin="anonymous">
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-        crossorigin="anonymous">
+        <!-- JavaScript Files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/scroller.js"></script>
+        <script src="js/modal.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav id="topnav">
+            <img class="brand" src="asset/logo.png" alt="logo">
+            <a href="javascript:void(0);" class="icon" onclick="navHamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a class="calltoaction" href="configure.html"><i class="fas fa-wrench"></i> Configure</a>
+            <a href="merch.html"><i class="fas fa-tshirt"></i> Merch</a>
+            <a href="gallery.html"><i class="fas fa-globe-europe"></i> Gallery</a>
+            <a class="active" href="discover.html"><i class="fas fa-globe-europe"></i> Discover</a>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        </nav>
 
-    <!-- JavaScript Files -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="js/hamburger.js"></script>
-    <script src="js/scroller.js"></script>
-</head>
-
-<body>
-    <!-- Navigation Bar -->
-    <nav id="topnav">
-        <img class="brand" src="asset/logo.png" alt="logo">
-        <a href="javascript:void(0);" class="icon" onclick="navHamburger()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a class="calltoaction" href="configure.html"><i class="fas fa-wrench"></i> Configure</a>
-        <a href="merch.html"><i class="fas fa-tshirt"></i> Merch</a>
-        <a href="gallery.html"><i class="fas fa-globe-europe"></i> Gallery</a>
-        <a class="active" href="discover.html"><i class="fas fa-globe-europe"></i> Discover</a>
-        <a href="index.html"><i class="fas fa-home"></i> Home</a>
-    </nav>
-
-    <!-- Half n' Half Sections -->
-    <section>
-        <section class="half">
-            <h1>Our Team</h1>
-            <p>With a diverse skill set and a proven track record of meeting key objectives within the automotive industry we are committed to offering a service and ownership experience which exceeds expectations. BAC’s team knows each of their customers by name. This is the foundation of an engaging emotional connection to a tribe in which owners are both welcome and feel a custodial sense of pride and involvement.</p>
+        <!-- Half n' Half Sections -->
+        <section>
+            <section class="half">
+                <h1>Our Team</h1>
+                <p>With a diverse skill set and a proven track record of meeting key objectives within the automotive
+                    industry we are committed to offering a service and ownership experience which exceeds expectations.
+                    Driven by passion, a demanding philosophy and sheer focused hard work, BAC has a comprehensive and
+                    coherent strategy to serve as a guide for all its activities. ‘Mono’ is the very embodiment of our
+                    approach; purity of design, innovative engineering, zero compromise and ultra-high performance.</p>
+                <p>The Total Ownership Experience of the BAC Mono is in many ways unparalleled. With Mono, we will
+                    introduce owners to a new benchmark in overall satisfaction by virtue of the quality of the product,
+                    attitude, and service proffered by our company. BAC’s team knows each of their customers by name. This
+                    is the foundation of an engaging emotional connection to a tribe in which owners are both welcome and
+                    feel a custodial sense of pride and involvement. Mono speaks to the driver that has always wanted a
+                    more intimate and visceral connection to the car. Only Mono is the answer to the childhood, teenage,
+                    and adult dream of being at the controls of a formula car.</p>
+            </section>
+            <aside class="half">
+                <a onclick="Show('ian')"><img class="portrait" src="asset/people/ian.jpg"></a>
+                <a onclick="Show('neill')"><img class="portrait" src="asset/people/neill.jpg"></a>
+                <a onclick="Show('alexandre')"><img class="portrait" src="asset/people/alexandre.jpg"></a>
+                <a onclick="Show('rainer')"><img class="portrait" src="asset/people/rainer.jpg"></a>
+                <a onclick="Show('guy')"><img class="portrait" src="asset/people/guy.jpg"></a>
+                <a onclick="Show('murray')"><img class="portrait" src="asset/people/murray.jpg"></a>
+                <a onclick="Show('oliver')"><img class="portrait" src="asset/people/oliver.jpg"></a>
+            </aside>
         </section>
-        <aside class="half">
-            <img class = "portrait" src="asset/people/ian.jpg">
-            <img class = "portrait" src="asset/people/neill.jpg">
-            <img class = "portrait" src="asset/people/alexandre.jpg">
-            <img class = "portrait" src="asset/people/rainer.jpg">
-            <img class = "portrait" src="asset/people/guy.jpg">
-            <img class = "portrait" src="asset/people/murray.jpg">
-            <img class = "portrait" src="asset/people/oliver.jpg">
-        </aside>
-    </section>
-    <section>
-        <section class="half">
-            <img src = "asset/model.jpg">
+        <section>
+            <section class="half">
+                <img src="asset/model.jpg">
+            </section>
+            <aside class="half">
+                <h1>Concept</h1>
+                <p>Introducing Mono, a lightweight, ultra high performance, road legal supercar designed and manufactured
+                    using the latest racing technology. Aimed at drivers who seek a purist driving experience and for whom
+                    design, engineering excellence and performance are of paramount importance, Mono is an aggressive
+                    design and will set a new benchmark in the small, but elite segment of radical, lightweight sports
+                    cars.</p>
+                Listen to an Interview with BAC Director, Ian Briggs explaining the concept behind Mono.
+                <br><br>
+                <audio controls>
+                    <source src="asset/interview.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </aside>
         </section>
-        <aside class="half">
-            <h1>Concept</h1>
-            <p>Introducing Mono, a lightweight, ultra high performance, road legal supercar designed and manufactured using the latest racing technology. Aimed at drivers who seek a purist driving experience and for whom design, engineering excellence and performance are of paramount importance, Mono is an aggressive design and will set a new benchmark in the small, but elite segment of radical, lightweight sports cars.</p>
-        </aside>
-    </section>
-    <section>
-        <section class="half">
-            <h1>Design</h1>
-            <p>The single central-seat gave our designers and project engineers the ultimate blank canvas on which to assemble their dream. The organic, enclosed front and exposed mechanical rear typifies the unique appearance of Mono. The design aesthetic is intended to combine sculpted, sleek, organic forms to provide an emotional, human connection juxtaposing the technical, mechanical elements of the car.</p>
+        <section>
+            <section class="half">
+                <h1>Design</h1>
+                <p>The single central-seat gave our designers and project engineers the ultimate blank canvas on which to
+                    assemble their dream. The organic, enclosed front and exposed mechanical rear typifies the unique
+                    appearance of Mono. The design aesthetic is intended to combine sculpted, sleek, organic forms to
+                    provide an emotional, human connection juxtaposing the technical, mechanical elements of the car.</p>
+                <p>While this vision runs throughout Mono's appearance it was fundamental to our designers that form follow
+                    function on all aspects of the car. The necessity to gain access to the central driving position and
+                    adjustable dampers as well as providing clean airflow to the radiators and engine are just some of the
+                    factors on which Mono's architecture is built.</p>
+            </section>
+            <aside class="half">
+                <img src="asset/road.jpg">
+            </aside>
         </section>
-        <aside class="half">
-            <img src="asset/road.jpg">
-        </aside>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="column">
-            Briggs Automotive Company Ltd <br>
-            Compass Point Industrial Estate <br>
-            Spindus Rd, Liverpool <br>
-            L24 1YA <br>
-            United Kingdom
-        </div>
-        <div class="column">
-            General Inquiry <br>
-            <a href="mailto:info@bac-mono.com">info@bac-mono.com</a> <br> <br>
-            Press Inquiry <br>
-            <a href="mailto:press@bac-mono.com">press@bac-mono.com</a>
-        </div>
-        <div class="column">
-            <div class="social">
-                <a href="https://www.facebook.com/bacmono/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/DiscoverMono"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/discovermono/"><i class="fab fa-instagram"></i></a>
+        <!-- Footer -->
+        <footer>
+            <div class="column">
+                Briggs Automotive Company Ltd <br>
+                Compass Point Industrial Estate <br>
+                Spindus Rd, Liverpool <br>
+                L24 1YA <br>
+                United Kingdom
+            </div>
+            <div class="column">
+                General Inquiry <br>
+                <a href="mailto:info@bac-mono.com">info@bac-mono.com</a> <br> <br>
+                Press Inquiry <br>
+                <a href="mailto:press@bac-mono.com">press@bac-mono.com</a>
+            </div>
+            <div class="column">
+                <div class="social">
+                    <a href="https://www.facebook.com/bacmono/"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitter.com/DiscoverMono"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/discovermono/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Popout People Modals -->
+        <div id="ian" class="modalbox" hidden>
+            <div class="modcontent">
+                <div class="modheader">
+                    <span class="close" onclick="Hide('ian')">&times;</span>
+                    <h1>Ian Briggs - Design Director</h1>
+                </div>
+                <div class="modbody">
+                    <p>Ian is an accomplished designer with a reputation for innovative and radical concepts that have won
+                        him awards and accolades in diverse fields including aviation, luxury yachts and the automotive
+                        sector. He and his brother Neill formed the consulting venture Adaptive Space in 2000 and have
+                        worked with major OEMs (primarily Porsche, Mercedes and Audi) for over a decade, along with clients
+                        such as Lufthansa and its Airbus A380 fleet. As co-founder of BAC Ltd alongside his brother, his
+                        remit with Mono makes him responsible for program creative design direction from concept through to
+                        production implementation, active in all creative aspects of component, system and total vehicle
+                        design, exterior and interior.</p>
+                </div>
             </div>
         </div>
-    </footer>
-</body>
-
+        <div id="neill" class="modalbox" hidden="true">
+            <div class="modcontent">
+                <div class="modheader">
+                    <span class="close" onclick="Hide('ian')">&times;</span>
+                    <h1>Neill Briggs - Director of Product Development</h1>
+                </div>
+                <div class="modbody">
+                    <p>As an engineer Neill has vast experience across the motor industry, having worked for the likes of
+                        Bentley and Ford, where he was Engineering Manager. Neill led the team responsible for the award
+                        winning “Multi-link, control blade, rear suspension” on the Focus RS, a car that proved to be a
+                        game changer for Ford. As co-founder of BAC (Briggs Automotive Company) Ltd his current brief sees
+                        him responsible for the entire program delivery and management of all disciplines within the
+                        business, active in all aspects of component, system and total vehicle design, development and
+                        engineering. For Neill, BAC is the realisation of a life-long ambition to develop innovative
+                        vehicles that show what is possible when we question and challenge convention.</p>
+                </div>
+            </div>
+        </div>
+        <div id="alexandre" class="modalbox" hidden="true">
+            <div class="modcontent">
+                <div class="modheader">
+                    <span class="close" onclick="Hide('ian')">&times;</span>
+                    <h1>Alexandre Gama – Board Member</h1>
+                </div>
+                <div class="modbody">
+                    <p>
+                        Alexandre Gama is one of the most respected and influential ad men in the communications industry
+                        worldwide. Having creative and planning skills as his background he is founder, CEO and CCO of
+                        NEOGAMA advertising agency and Member of the Global Creative Board at Publicis Communications, one
+                        of the biggest communications groups in the world. As a shareholder and investor in BAC and also
+                        sitting at the board of this company, Alexandre brings a wealth of accumulated knowledge and
+                        expertise on brand building, positioning innovation and communication skills. Plus, he has huge car
+                        experience having had the opportunity to work with 5 of the big established car companies during
+                        his career: Volkswagen, Ford, Audi, Mitsubishi and Renault.“It’s my day to day job to cherish and
+                        support new talent and recognise new ideas and game changing creativity in any field. It’s clear to
+                        me then, that BAC has moved the benchmark completely in the automotive sector. Mono is a unique and
+                        innovative idea so well executed that got me at first sight as a consumer more than a professional.
+                        In a world full of compromises, Mono is what I call ‘One of a Kind’. It truly is.”
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="rainer" class="modalbox" hidden="true">
+            <div class="modcontent">
+                <div class="modheader">
+                    <span class="close" onclick="Hide('ian')">&times;</span>
+                    <h1>Rainer Kuhlwein – Director of Manufacturing</h1>
+                </div>
+                <div class="modbody">
+                    <p>
+                        Rainer is responsible for all logistics, manufacturing, supply chain management and production at
+                        BAC, drawing on 20 years’ experience at senior level in related fields for leading companies. His
+                        knowledge spans large international corporates as well as SME’s, he has been involved in multiple
+                        M&A transactions and a successful IPO. Rainer met Ian and Neill Briggs through the shared love for
+                        Design, lightweight Sports cars and Italian Motorbikes such as MV Agusta and joined the BAC team in
+                        2011.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="guy" class="modalbox" hidden="true">
+            <div class="modcontent">
+                <div class="modheader">
+                    <span class="close" onclick="Hide('ian')">&times;</span>
+                    <h1>Guy Harvey - Senior Designer</h1>
+                </div>
+                <div class="modbody">
+                    <p>
+                        Having graduated from Coventry University’s renowned Transportation Design course alongside Ian,
+                        Guy has accumulated a vast experience and knowledge across a number of different design and
+                        engineering disciplines, ranging from automotive (Renault and Mercedes) to the aircraft and boat
+                        industries. His involvement in Mono has been extensive, working on both design and body engineering
+                        - from conception through to the production qualification and manufacturing - Guy helped form the
+                        distinctive shape of Mono.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="murray" class="modalbox" hidden="true">
+            <div class="modcontent">
+                <div class="modheader">
+                    <span class="close" onclick="Hide('ian')">&times;</span>
+                    <h1>Murray Adams - Senior Designer</h1>
+                </div>
+                <div class="modbody">
+                    <p>
+                        Murray joined the team in 2007 having graduated from Pforzheim’s Masters in Transportation design
+                        course in Germany. Since project inception he has worked extensively - from initial concept through
+                        to production implementation - on all aspects of the interior and exterior design of Mono,
+                        including initial concept/developmental sketches, clay model and CAD realisation. In addition to
+                        his continued involvement in model year design changes and future projects Murray’s remit includes
+                        all aspects of BAC corporate identity.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="oliver" class="modalbox" hidden="true">
+            <div class="modcontent">
+                <div class="modheader">
+                    <span class="close" onclick="Hide('ian')">&times;</span>
+                    <h1>Oliver Webb – Test and Development Driver</h1>
+                </div>
+                <div class="modbody">
+                    <p>
+                        Despite his modest years, professional racing driver Oliver Webb brings great experience to his
+                        role as Mono test and development driver. A winner since he first stepped into a kart, Oliver has
+                        competed in a variety of Formula over the world’s greatest race circuits. Most recently he won the
+                        2014 European Le Mans Series Championship with Signatech Alpine, a season that featured a 7th place
+                        overall finish in his first Le Mans 24 race. Oliver has been instrumental in the setup of Mono,
+                        helping it to be formidable as both a road and track car. In addition to his driving role Oliver
+                        has also provided valuable feedback to the videogames which feature Mono, most notably Project
+                        Cars, where he has been involved since the games inception, ensuring that the experience will be
+                        extremely realistic.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

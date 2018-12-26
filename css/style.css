@@ -14,6 +14,10 @@ body {
 * {
     box-sizing: border-box;
 }
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 /* Get rid of underline on links */
 a {
     text-decoration: none;
@@ -28,6 +32,7 @@ a.top {
     position: fixed;
     right: 20px;
     bottom: 20px;
+    z-index: 2;
     background: #2699FB url("../asset/arrow.png") no-repeat center 43%;
     border-radius: 30px;
 }
@@ -195,4 +200,9 @@ section:after {
     .button {
         max-width: 50vw;
     }
+}
+
+/* Style Audio Player */
+audio {
+    width: 100%;
 }
