@@ -6,6 +6,11 @@ function Show(idname)
     {
        item.removeAttribute('hidden');
     }
+
+    $('html, body').animate(
+    {
+        scrollTop: 0
+    }, 700);
 }
 
 function Hide(idname)
