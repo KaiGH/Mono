@@ -206,3 +206,32 @@ section:after {
 audio {
     width: 100%;
 }
+
+/* Style Gallery */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 22vw;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.description {
+    padding: 15px;
+    text-align: center;
+}
+@media screen and (max-width: 750px) {
+    div.gallery {
+        width: 45vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    div.gallery {
+        width: 100vw;
+    }
+}
