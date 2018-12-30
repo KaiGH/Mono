@@ -218,7 +218,9 @@ div.card {
     max-width: 100%;
     border-radius: 5px;
     background: #ffffff;
-    margin: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
     display: inline-block;
 }
 div.card:hover {
@@ -226,9 +228,13 @@ div.card:hover {
 }
 .container {
     padding: 2px 16px;
+    color: #686868;
+    text-align: center;
 }
 div.card img {
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     height: auto;
 }
 
@@ -241,10 +247,11 @@ div.cart {
     background-color: #aaa;
 }
 div.cart a {
+    background-color: #707070;
     float: right;
     text-align: center;
     padding: 14px 16px;
 }
 div.cart a:hover {
-    background-color: #707070;
+    background-color: #686868;
 }
