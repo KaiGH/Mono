@@ -207,23 +207,31 @@ audio {
     width: 100%;
 }
 
-/* Style Gallery */
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 22vw;
+/* Card UI */
+section.center {
+    text-align: center;
 }
-div.gallery:hover {
-    border: 1px solid #777;
+div.card {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 5px;
+    background: #ffffff;
+    margin: 2%;
+    display: inline-block;
 }
-div.gallery img {
+div.card:hover {
+    box-shadow: 0 64px 128px 0 rgba(0,0,0,0.2);
+}
+div.card img {
     width: 100%;
     height: auto;
 }
 div.description {
     padding: 15px;
     text-align: center;
+    color: #656565;
 }
 @media screen and (max-width: 750px) {
     div.gallery {
