@@ -228,18 +228,3 @@ div.card img {
     width: 100%;
     height: auto;
 }
-div.description {
-    padding: 15px;
-    text-align: center;
-    color: #656565;
-}
-@media screen and (max-width: 750px) {
-    div.gallery {
-        width: 45vw;
-    }
-}
-@media screen and (max-width: 500px) {
-    div.gallery {
-        width: 100vw;
-    }
-}
