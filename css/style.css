@@ -224,7 +224,27 @@ div.card {
 div.card:hover {
     box-shadow: 0 64px 128px 0 rgba(0,0,0,0.2);
 }
+.container {
+    padding: 2px 16px;
+}
 div.card img {
     width: 100%;
     height: auto;
+}
+
+/* Merchandise Cart Styling */
+div.cart {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #aaa;
+}
+div.cart a {
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+}
+div.cart a:hover {
+    background-color: #707070;
 }
