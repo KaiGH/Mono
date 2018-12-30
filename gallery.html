@@ -14,6 +14,7 @@
 
         <!-- CSS Files -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" 
               href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
               integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
@@ -25,6 +26,7 @@
                 crossorigin="anonymous"></script>
         <script src="js/hamburger.js"></script>
         <script src="js/scroller.js"></script>
+        <script src="js/modal.js"></script>
     </head>
     <body>
         <!-- Navigation Bar -->
@@ -114,9 +116,35 @@
                 <li><img src="asset/gallery/darkroom/12_darkroom_front_l_closeup.jpg"><h5>Darkroom</h5></li>
             </ul>
             <ul id="elasticstack8" class="elasticstack">
-                <li><img src="asset/gallery/videos.png" alt="Man pointing at super cars"><h5>Videos</h5></li>
+                <li><a onclick="Show('videos')"><img src="asset/gallery/videos.png" alt="Man pointing at super cars"><h5>Videos</h5></a></li>
             </ul>
         </section>
+
+        <!-- Modal box for Videos -->
+        <div id="videos" class="modalbox" hidden="true">
+                <div class="modheader">
+                    <span class="close" onclick="Hide('videos')">&times;</span>
+                    <h1>Videos of the Mono</h1>
+                </div>
+                <div class="modbody">
+                    <a href="https://youtu.be/zJGo-NktpWw"><h2>Ice Driving</h2></a>
+                    <p>The BAC team mapped out various tracks on the ice before unleashing Mono on it, resulting in a thorough examination of the most extreme driving against a stunning wintry backdrop.</p>
+                    <a href="https://youtu.be/PBYlDfVNUX4"><h2>Production Car Record at Zolder Circuit</h2></a>
+                    <p>Briggs Automotive Company (BAC) has once again made history, as its Mono supercar has become the fastest-ever production car to lap the famous Zolder Circuit in Belgium. </p>
+                    <a href="https://youtu.be/5_Cyfget9YQ"><h2>Carfection Takes on the Isle of Man</h2></a>
+                    <p>Carfection has put together a truly epic 10-minute film celebrating founder Drew Stearne's time on the Isle of Man behind the wheel of Briggs Automotive Company's (BAC) world-famous Mono supercar.</p>
+                    <a href="https://youtu.be/UegbPW0MreA"><h2>Top Gear USA Experiences</h2></a>
+                    <p>Actor turned presenter Bill Fichtner gets behind the wheel of the Mono for the new BBC America show</p>
+                    <a href="https://youtu.be/sAjCa-itOC8"><h2>Isle of Man Experience</h2></a>
+                    <p>A record-breaking 12 BAC Mono supercars descend on the Isle of Man for a festival of driving fun. As part of BAC's famous Experience tours, drivers enjoyed specially closed roads and a private track day at Jurby in the presence of like-minded enthusiasts. Epic.</p>
+                    <a href="https://youtu.be/53XJ33DtiJg"><h2>Hillclimb-Winning Run</h2></a>
+                    <p>GoPro - Climb aboard the BAC Mono with Oliver Webb as he takes the One-of-a-Kind supercar to P1 in the Supercars and Race Cars for the Road Shootout.</p>
+                    <a href="https://youtu.be/EMlc9bCgHr8"><h2>Drifting on Frozen Lakes</h2></a>
+                    <p>Watch highlights of BAC's hugely successful inaugural Mono Ice Driving Experience trip on the frozen lakes of Are, Sweden, in three of its One-of-a-Kind Mono supercars.</p>
+                    <a href="https://youtu.be/HXGUWB4LqxM"><h2>Evo Magazine's Fastest Ever</h2></a>
+                    <p>BAC Mono outguns the track-only, slick-shod McLaren P1 GTR to become the fastest car ever tested by evo Magazine around the Anglesey Coastal Circuit.</p>
+                </div>
+            </div>
 
         <!-- Footer -->
         <footer>
