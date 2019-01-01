@@ -14,6 +14,7 @@
 
         <!-- CSS Files -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" 
               href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
               integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
@@ -25,17 +26,18 @@
                 crossorigin="anonymous"></script>
         <script src="js/hamburger.js"></script>
         <script src="js/scroller.js"></script>
+        <script src="js/modal.js"></script>
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav>
+        <nav id="nav">
             <img class="brand" src="asset/logo.png" alt="logo">
             <a href="javascript:void(0);" class="icon" onclick="navHamburger()">
                 <i class="fa fa-bars"></i>
             </a>
             <a class="calltoaction" href="configure.html"><i class="fas fa-wrench"></i> Configure</a>
             <a class="active" href="merch.html"><i class="fas fa-tshirt"></i> Merch</a>
-            <a href="gallery.html"><i class="fas fa-globe-europe"></i> Gallery</a>
+            <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
             <a href="discover.html"><i class="fas fa-globe-europe"></i> Discover</a>
             <a href="index.html"><i class="fas fa-home"></i> Home</a>
             <a href="demo.html"><i class="fas fa-play"></i> Demo</a>
@@ -46,7 +48,7 @@
             <div class="cart">
                 <a href="javascript:void(0);" id="value"><i class="fas fa-pound-sign"></i> Value</a>
                 <a href="javascript:void(0);" id="items"><i class="fas fa-hashtag"></i> Items</a>
-                <a href="javascript:void(0);"><i class="fas fa-cart-arrow-down"></i> Cart</a>
+                <a href="javascript:void(0);" onclick="Show('cart')" onclick="OpenCart()"><i class="fas fa-cart-arrow-down"></i> Cart</a>
             </div>
         </section>
 
@@ -137,6 +139,17 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Cart -->
+        <div id="cart" class="modalbox" hidden="true">
+            <div class="modheader">
+                <span class="close" onclick="Hide('cart')">&times;</span>
+                <h1>Cart</h1>
+            </div>
+            <div class="modbody" id="cartlist">
+
+            </div>
+        </div>
 
         <!-- Cart Script -->
         <script src="js/cart.js"></script>

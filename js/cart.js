@@ -5,6 +5,7 @@ var prices = [79, 9, 8, 20, 5, 249];
 // Cart variables for item count and value
 var count = 0;
 var total = 0;
+var cart = [];
 
 // Add to cart method which is called by button press
 function AddToCart(item)
@@ -29,7 +30,7 @@ function Update(index)
 {
     count++;
     total += prices[index];
-    alert("Item added to cart: " + products[index] + " Cart items: " + count + " Total: " + total);
+    cart.push(products[index]);
     Export();
 }
 
@@ -40,4 +41,13 @@ function Export()
     $(value).html('<i class="fas fa-pound-sign"></i>' + total);
     $("#items").html($("#items").html().replace(total));
     $(items).html('<i class="fas fa-hashtag"></i>' + count);
+}
+
+// List items in cart on button press
+function OpenCart()
+{
+    $.each(cart, function (index, value)
+    {
+        $( "#cartlist" ).append( "<li>"+value+"</li>" );
+    });
 }
