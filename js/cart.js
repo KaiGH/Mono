@@ -1,5 +1,5 @@
 // Declare arrays of shop items
-var items = ["helmet", "poster", "print", "shirt", "strap", "suit"];
+var products = ["helmet", "poster", "print", "shirt", "strap", "suit"];
 var prices = [79, 9, 8, 20, 5, 249];
 
 // Cart variables for item count and value
@@ -9,18 +9,16 @@ var total = 0;
 // Add to cart method which is called by button press
 function AddToCart(item)
 {
-    alert(item + " added to cart");
     FindItem(item);
 }
 
 // Find item in array
 function FindItem(item)
 {
-    $.each(items, function (index, value)
+    $.each(products, function (index, value)
     {
         if (item === value)
         {
-            alert(item + " is of value " + prices[index]);
             Update(index);
         }
     });
@@ -31,12 +29,15 @@ function Update(index)
 {
     count++;
     total += prices[index];
-    alert("Cart items: " + count + " Total: " + total);
+    alert("Item added to cart: " + products[index] + " Cart items: " + count + " Total: " + total);
     Export();
 }
 
-// Update DOM
+// Update DOM with Variable Values
 function Export()
 {
-    
+    $("#value").html($("#value").html().replace(value));
+    $(value).html('<i class="fas fa-pound-sign"></i>' + total);
+    $("#items").html($("#items").html().replace(total));
+    $(items).html('<i class="fas fa-hashtag"></i>' + count);
 }
