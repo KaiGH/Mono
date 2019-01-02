@@ -97,12 +97,25 @@ function CreateCookie(cookieName, cookieValue)
 }
 
 // Read cookie back to array
-function ReadCookie()
+function ReadCookie(cookieName)
 {
-    var cookie = document.cookie.split(';');
-    if (cookie[0]) {
-        cart = cookie.parseJSON(json)
+    var name = cookieName + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    var json;
+    for(var i = 0; i < ca.length; i++)
+    {
+        var c = ca[i];
+        while (c.charAt(0) == ' ')
+        {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0)
+        {
+            json = c.substring(name.length, c.length);
+        }
     }
+    cart = JSON.parse(json);
     VariableSetter();
 }
 
