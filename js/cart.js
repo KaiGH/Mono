@@ -43,11 +43,27 @@ function Export()
     $(items).html('<i class="fas fa-hashtag"></i>' + count);
 }
 
-// List items in cart on button press
+// Display cart upon button press
 function OpenCart()
 {
+    FillCart();
+    Show('cart');
+}
+
+// Add items to div container in DOM
+function FillCart()
+{
+    ResetCart();
     $.each(cart, function (index, value)
     {
-        $( "#cartlist" ).append( "<li>"+value+"</li>" );
+        $("#cartlist").append("<li>"+value+"</li>");
     });
+    $("#cartlist").append("Items: " + count + "<br>");
+    $("#cartlist").append("Total: £" + total);
+}
+
+// Remove all items from div container
+function ResetCart()
+{
+    $('#cartlist').contents().remove();
 }
