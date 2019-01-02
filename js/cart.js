@@ -67,3 +67,13 @@ function ResetCart()
 {
     $('#cartlist').contents().remove();
 }
+
+// Remove all items from the cart
+function EmptyCart()
+{
+    cart = [];
+    count = 0;
+    total = 0;
+    Export();
+    FillCart();
+}

@@ -255,3 +255,18 @@ div.cart a {
 div.cart a:hover {
     background-color: #686868;
 }
+
+/* Cart Button */
+.modheader h1{
+    display: inline-block;
+}
+.emptybutton {
+    background-color: #707070;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 15px;
+}
+.emptybutton a:hover {
+    background-color: #686868;
+}

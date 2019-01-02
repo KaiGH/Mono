@@ -45,7 +45,7 @@
 
         <!-- Cart Icon -->
         <section>
-            <div class="cart">
+            <div class="cart" id="drop">
                 <a href="javascript:void(0);" id="value"><i class="fas fa-pound-sign"></i> Value</a>
                 <a href="javascript:void(0);" id="items"><i class="fas fa-hashtag"></i> Items</a>
                 <a href="javascript:void(0);" onclick="OpenCart()"><i class="fas fa-cart-arrow-down"></i> Cart</a>
@@ -145,6 +145,7 @@
             <div class="modheader">
                 <span class="close" onclick="Hide('cart')">&times;</span>
                 <h1>Cart</h1>
+                <a class="emptybutton" href="javascript:void(0);" onclick="EmptyCart()">Empty Cart</a>
             </div>
             <div class="modbody" id="cartlist">
 
