@@ -1,24 +1,42 @@
 // Make shop items draggable
-$('#item1').draggable({
+$('#item1').draggable(
+{
+    revert:true,
+    proxy:'clone',
+});
+$('#item2').draggable(
+{
+    revert:true,
     proxy:'clone'
 });
-$('#item2').draggable({
+$('#item3').draggable(
+{
+    revert:true,
     proxy:'clone'
 });
-$('#item3').draggable({
+$('#item4').draggable(
+{
+    revert:true,
     proxy:'clone'
 });
-$('#item4').draggable({
+$('#item5').draggable(
+{
+    revert:true,
     proxy:'clone'
 });
-$('#item5').draggable({
-    proxy:'clone'
-});
-$('#item6').draggable({
+$('#item6').draggable(
+{
+    revert:true,
     proxy:'clone'
 });
 
 // Make cart items droppable
-$('#drop').droppable({
-
+$('#drop').droppable(
+{
+    onDrop:function(e,source)
+    {
+        alert("dropped");
+        AddToCart(source);
+        alert(source);
+    }
 });

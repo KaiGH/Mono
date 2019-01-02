@@ -34,7 +34,7 @@ function Update(index)
     Export();
 }
 
-// Update DOM with Variable Values
+// Update DOM with variable values
 function Export()
 {
     $("#value").html($("#value").html().replace(value));
@@ -93,7 +93,6 @@ function CreateCookie(cookieName, cookieValue)
     var expires = new Date(new Date().setFullYear(new Date().getFullYear() + 1))
     expires = "expires="+expires.toUTCString();
     document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
-    alert(cookieName + "=" + cookieValue + ";" + expires + ";path=/");
 }
 
 // Read cookie back to array
@@ -133,4 +132,5 @@ function VariableSetter()
             }
         });
     });
+    Export();
 } 
