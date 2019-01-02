@@ -41,12 +41,13 @@ function Export()
     $(value).html('<i class="fas fa-pound-sign"></i>' + total);
     $("#items").html($("#items").html().replace(total));
     $(items).html('<i class="fas fa-hashtag"></i>' + count);
+    FillCart();
+    StoreCookie();
 }
 
 // Display cart upon button press
 function OpenCart()
 {
-    FillCart();
     Show('cart');
 }
 
@@ -77,3 +78,46 @@ function EmptyCart()
     Export();
     FillCart();
 }
+
+// Store in cookie
+function StoreCookie()
+{
+    var json = JSON.stringify(cart);
+    CreateCookie('cartCookie', json);
+
+}
+
+// Create a cookie that expires next year
+function CreateCookie(cookieName, cookieValue)
+{
+    var expires = new Date(new Date().setFullYear(new Date().getFullYear() + 1))
+    expires = "expires="+expires.toUTCString();
+    document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+    alert(cookieName + "=" + cookieValue + ";" + expires + ";path=/");
+}
+
+// Read cookie back to array
+function ReadCookie()
+{
+    var cookie = document.cookie.split(';');
+    if (cookie[0]) {
+        cart = cookie.parseJSON(json)
+    }
+    VariableSetter();
+}
+
+// Set count and total variables from cookie
+function VariableSetter()
+{
+    $.each(cart, function (index, value)
+    {
+        $.each(products, function (pindex, pvalue)
+        {
+            if (value == pvalue)
+            {
+                count++;
+                total += prices[index];
+            }
+        });
+    });
+} 

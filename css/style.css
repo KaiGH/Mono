@@ -260,6 +260,9 @@ div.cart a:hover {
 .modheader h1{
     display: inline-block;
 }
+.modbody li{
+    margin-left: 20px;
+}
 .emptybutton {
     background-color: #707070;
     float: right;
