@@ -275,15 +275,53 @@ div.cart a:hover {
 }
 
 /* Configure Section Image */
-section img {
-    float: center;
-    padding: 2vh;
-    width: 100%;
-    max-height: 100%;
+.imgblock img {
+    padding-top: 2vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 .sectblock {
-    margin: 2vh;
-    width: 100%;
-    text-align: center;
     background: #707070;
+    text-align: center;
+    margin-bottom: 2vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 10px;
+}
+.sectblock h1 {
+    margin-bottom: 0px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+@media screen and (max-width: 750px) {
+    .sectblock {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+    .imgblock img {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+    .sectblock {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+}
+
+/* Style Colour Dots */
+.dot {
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    display: inline-block;
+}
+@media screen and (max-width: 750px) {
+    .dot {
+        height: 8vw;
+        width: 8vw;
+    }
 }
