@@ -104,6 +104,9 @@ nav .icon {
 }
 
 /* Footer */
+footer {
+    background-color: #707070;
+}
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
@@ -164,7 +167,7 @@ section:after {
 
 /* Section Background */
 .concept {
-    background: url("../asset/concept.jpg");
+    background: url("../asset/home/concept.jpg");
     padding-top: 9vh;
     padding-bottom: 9vh;
 }
