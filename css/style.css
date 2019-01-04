@@ -325,3 +325,13 @@ div.cart a:hover {
         width: 8vw;
     }
 }
+
+/* Fun Page */
+.decals {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.decals img{
+    width: 8%;
+    height: 15%;
+}

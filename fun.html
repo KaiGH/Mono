@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Site Information -->
+        <title>BAC Mono - Decals</title>
+        <link rel="icon" href="asset/favicon.png">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <!-- Metadata -->
+        <meta name="description" content="Mono Decals">
+        <meta name="keywords" content="fun, decals, add, remove, drag, drop, stickers, kids, cars, fun">
+
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" 
+              href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+              integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+              crossorigin="anonymous">
+
+        <!-- JavaScript Files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/scroller.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav id="nav">
+            <img class="brand" src="asset/logo.png" alt="logo">
+            <a href="javascript:void(0);" class="icon" onclick="navHamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a class="calltoaction" href="configure.html"><i class="fas fa-wrench"></i> Configure</a>
+            <a href="merch.html"><i class="fas fa-tshirt"></i> Merch</a>
+            <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+            <a href="discover.html"><i class="fas fa-globe-europe"></i> Discover</a>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="demo.html"><i class="fas fa-play"></i> Demo</a>
+        </nav>
+
+        <!-- Image Section -->
+        <section class="imgblock">
+            <img src="asset/fun/car.gif" alt="top view of mono">
+        </section>
+        
+        <!-- Decal Section -->
+        <section class="decals">
+            <img id="decal1" src="asset/fun/17.png" alt="number 17">
+            <img id="decal2" src="asset/fun/blackwhite.png" alt="black and white checkerboard">
+            <img id="decal3" src="asset/fun/drone.png" alt="drone with skull">
+            <img id="decal4" src="asset/fun/fox.png" alt="fox symbol">
+            <img id="decal5" src="asset/fun/flames.png" alt="racing flames">
+            <img id="decal6" src="asset/fun/line.png" alt="black line">
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="column">
+                Briggs Automotive Company Ltd <br>
+                Compass Point Industrial Estate <br>
+                Spindus Rd, Liverpool <br>
+                L24 1YA <br>
+                United Kingdom
+            </div>
+            <div class="column">
+                General Inquiry <br>
+                <a href="mailto:info@bac-mono.com">info@bac-mono.com</a> <br> <br>
+                Press Inquiry <br>
+                <a href="mailto:press@bac-mono.com">press@bac-mono.com</a>
+            </div>
+            <div class="column">
+                <div class="social">
+                    <a href="https://www.facebook.com/bacmono/"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitter.com/DiscoverMono"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/discovermono/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Drag and Drop Scripts -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                crossorigin="anonymous"></script>
+        <script>
+            // Make decals draggable
+            $('#decal1').draggable({});
+            $('#decal2').draggable({});
+            $('#decal3').draggable({});
+            $('#decal4').draggable({});
+            $('#decal5').draggable({});
+            $('#decal6').draggable({});
+        </script>
+    </body>
+</html>
