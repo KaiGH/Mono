@@ -315,6 +315,13 @@ div.cart a:hover {
     }
 }
 
+/* Configure View Button */
+section button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Style Colour Dots */
 .dot {
     height: 5vw;
