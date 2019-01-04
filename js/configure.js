@@ -66,5 +66,12 @@ $( "#yellow" ).click(function()
 });
 $( "#toggle" ).click(function()
 {
-    ChangeView('side');
+    if (view == 'side')
+    {
+        ChangeView('top');
+    }
+    else
+    {
+        ChangeView('side');
+    }
 });
