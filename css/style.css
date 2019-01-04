@@ -336,14 +336,14 @@ div.cart a:hover {
     height: 15%;
 }
 
+/* iframe Style */
+iframe {
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+}
+
 /* Map Style */
 map {
     text-align: center;
-}
-map iframe {
-    width: 100%;
-    height: 90vh;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
