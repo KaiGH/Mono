@@ -95,6 +95,20 @@ function CreateCookie(cookieName, cookieValue)
     document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
 }
 
+// On document load run check cookie method
+$(document).ready(function() {
+    CheckCookie();
+});
+
+// Check cookie exists
+function CheckCookie(cookieName)
+{
+    if (!!$.cookie(cookieName))
+    {
+        ReadCookie(cookieName);
+    }
+}
+
 // Read cookie back to array
 function ReadCookie(cookieName)
 {
