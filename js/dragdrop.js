@@ -1,30 +1,30 @@
 // Make shop items draggable
-$('#item1').draggable(
+$('#helmet').draggable(
 {
     revert:true,
     proxy:'clone',
 });
-$('#item2').draggable(
+$('#poster').draggable(
 {
     revert:true,
     proxy:'clone'
 });
-$('#item3').draggable(
+$('#print').draggable(
 {
     revert:true,
     proxy:'clone'
 });
-$('#item4').draggable(
+$('#shirt').draggable(
 {
     revert:true,
     proxy:'clone'
 });
-$('#item5').draggable(
+$('#strap').draggable(
 {
     revert:true,
     proxy:'clone'
 });
-$('#item6').draggable(
+$('#suit').draggable(
 {
     revert:true,
     proxy:'clone'
@@ -33,10 +33,14 @@ $('#item6').draggable(
 // Make cart items droppable
 $('#drop').droppable(
 {
-    onDrop:function(e,source)
+    // Accept item if it makes contact with any area of #drop
+    tolerance:"touch",
+
+    // Add item to cart on drop
+    drop: function( event, ui ) 
     {
-        alert("dropped");
-        AddToCart(source);
-        alert(source);
-    }
+        var draggableId = ui.draggable.attr("id");
+        AddToCart(draggableId);
+        alert("Added " + draggableId + " to cart");
+    } 
 });
