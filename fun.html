@@ -28,7 +28,7 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav id="nav">
+        <nav id="nav" class="nav">
             <img class="brand" src="asset/logo.png" alt="logo">
             <a href="javascript:void(0);" class="icon" onclick="navHamburger()">
                 <i class="fa fa-bars"></i>
@@ -49,12 +49,12 @@
         
         <!-- Decal Section -->
         <section class="decals">
-            <img id="decal1" src="asset/fun/17.png" alt="number 17">
-            <img id="decal2" src="asset/fun/blackwhite.png" alt="black and white checkerboard">
-            <img id="decal3" src="asset/fun/drone.png" alt="drone with skull">
-            <img id="decal4" src="asset/fun/fox.png" alt="fox symbol">
-            <img id="decal5" src="asset/fun/flames.png" alt="racing flames">
-            <img id="decal6" src="asset/fun/line.png" alt="black line">
+            <div id="div1"><img id="img1" src="asset/fun/17.png" alt="number 17"></div>
+            <div id="div2"><img id="img2" src="asset/fun/blackwhite.png" alt="black and white checkerboard"></div>
+            <div id="div3"><img id="img3" src="asset/fun/drone.png" alt="drone with skull"></div>
+            <div id="div4"><img id="img4" src="asset/fun/fox.png" alt="fox symbol"></div>
+            <div id="div5"><img id="img5" src="asset/fun/flames.png" alt="racing flames"></div>
+            <div id="div6"><img id="img6" src="asset/fun/line.png" alt="black line"></div>
         </section>
 
         <!-- Footer -->
@@ -85,14 +85,9 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
                 integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
                 crossorigin="anonymous"></script>
-        <script>
-            // Make decals draggable
-            $('#decal1').draggable({});
-            $('#decal2').draggable({});
-            $('#decal3').draggable({});
-            $('#decal4').draggable({});
-            $('#decal5').draggable({});
-            $('#decal6').draggable({});
-        </script>
+        <script src="js/decals.js"></script>
+
+        <!-- JQuery UI CSS for Resizable Handles-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
     </body>
 </html>
