@@ -258,14 +258,23 @@ div.cart a {
 div.cart a:hover {
     background-color: #686868;
 }
-
-/* Cart Button */
+/* Cart Contents */
 .modheader h1{
     display: inline-block;
 }
 .modbody li{
-    margin-left: 20px;
+    margin-bottom: 2%;
+    padding: 5px;
+    width: 100%;
+    background: #aaa;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
 }
+.modbody li:hover{
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+/* Cart Empty Button */
 .emptybutton {
     background-color: #707070;
     float: right;
@@ -273,7 +282,7 @@ div.cart a:hover {
     padding: 14px 16px;
     margin: 15px;
 }
-.emptybutton a:hover {
+.emptybutton:hover {
     background-color: #686868;
 }
 
