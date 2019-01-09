@@ -7,9 +7,16 @@ function Start()
     for(var i = 1; i <= 6; i++)
     {
         // Make decals draggable
-        $('#img' + i).draggable();
+        $('#div' + i).draggable(
+        {
+
+        });
 
         // Make decals resizable
-        $('#div' + i).resizable();
+        $('#div' + i).resizable(
+        {
+            alsoResize: '#img' + i,
+            containment: "document",
+        });
     }
 }
