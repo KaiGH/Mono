@@ -4,7 +4,6 @@
         <!-- Site Information -->
         <title>BAC Mono - Gallery</title>
         <link rel="icon" href="asset/favicon.png">
-        <meta http-equiv="Content-Type" content="text/html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
 
@@ -110,14 +109,15 @@
                 <li><img src="asset/gallery/darkroom/12_darkroom_front_l_closeup.jpg" alt="dark studio pic"><h5>Darkroom</h5></li>
             </ul>
             <ul id="elasticstack8" class="elasticstack">
-                <li><a onclick="Show('videos')"><img src="asset/gallery/videos.png" alt="Man pointing at super cars">
-                        <h5>Videos <i class="fa fa-mouse-pointer"></i></h5>
-                </li></a>
+                <li>
+                    <a onclick="Show('videos')"><img src="asset/gallery/videos.png" alt="Man pointing at super cars">
+                    <h5>Videos <i class="fa fa-mouse-pointer"></i></h5></a>
+                </li>
             </ul>
         </section>
 
         <!-- Modal box for Videos -->
-        <div id="videos" class="modalbox" hidden="true">
+        <div id="videos" class="modalbox" hidden>
                 <div class="modheader">
                     <span class="close" onclick="Hide('videos')">&times;</span>
                     <h1>Videos of the Mono</h1>

@@ -21,5 +21,5 @@ function Hide(idname)
     var item = document.getElementById(idname)
 
     // Create hidden attribute and set it to true to re-hide the modal
-    item.setAttribute('hidden', true);
+    item.setAttribute('hidden', '');
 }
