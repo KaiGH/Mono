@@ -24,6 +24,9 @@ $( "#nav" ).ready(function()
     {
         // Delete Fun link from navbar as it doesn't work on mobile
         $("a:contains('Fun')").remove();
+
+        // Change 3D Warehouse iframe to an image for mobile browsers
+        $("#3D").html('<img src="asset/home/model.jpg" alt="3D Model">');
     }
 });
 
