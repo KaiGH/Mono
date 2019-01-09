@@ -19,14 +19,6 @@
               href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
               integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
               crossorigin="anonymous">
-
-        <!-- JavaScript Files -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-        <script src="js/hamburger.js"></script>
-        <script src="js/scroller.js"></script>
-        <script src="js/modal.js"></script>
     </head>
     <body>
         <!-- Navigation Bar -->
@@ -182,20 +174,24 @@
             </div>
         </footer>
         
-        <!-- ElastiStack JavaScript -->
+        <!-- JavaScript Files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/scroller.js"></script>
+        <script src="js/modal.js"></script>
+
+        <!-- ElastiStack JavaScript and CSS -->
         <link rel="stylesheet" type="text/css" href="css/elastistack.css" />
         <script src="js/elastistack/modernizr.js"></script>
         <script src="js/elastistack/draggabilly.js"></script>
         <script src="js/elastistack/elastistack.js"></script>
         <script>
-            new ElastiStack( document.getElementById( 'elasticstack1' ) );
-            new ElastiStack( document.getElementById( 'elasticstack2' ) );
-            new ElastiStack( document.getElementById( 'elasticstack3' ) );
-            new ElastiStack( document.getElementById( 'elasticstack4' ) );
-            new ElastiStack( document.getElementById( 'elasticstack5' ) );
-            new ElastiStack( document.getElementById( 'elasticstack6' ) );
-            new ElastiStack( document.getElementById( 'elasticstack7' ) );
-            new ElastiStack( document.getElementById( 'elasticstack8' ) );
+            for (var i = 1; i <= 8; i++)
+            {
+                new ElastiStack( document.getElementById( 'elasticstack' + i ) );
+            }
         </script>
     </body>
 </html>
