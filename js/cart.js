@@ -95,47 +95,27 @@ function CreateCookie(cookieName, cookieValue)
     document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
 }
 
-// Event listener for page load
-document.addEventListener("load", ReadCookie('cartCookie')); 
-
-// Check if cookie exists before reading it
-function CheckCookie(cookiename)
-{
-    if (document.cookie.indexOf(cookiename + '='))
-    {
-        return(true);
-    }
-    else
-    {
-        return(false);
-    }
-}
-
 // Read cookie back to array
 function ReadCookie(cookieName)
 {
-    // if CheckCookie returns true, read the cookie
-    if(CheckCookie(cookieName))
+    var name = cookieName + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    var json;
+    for(var i = 0; i < ca.length; i++)
     {
-        var name = cookieName + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        var json;
-        for(var i = 0; i < ca.length; i++)
+        var c = ca[i];
+        while (c.charAt(0) == ' ')
         {
-            var c = ca[i];
-            while (c.charAt(0) == ' ')
-            {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0)
-            {
-                json = c.substring(name.length, c.length);
-            }
+            c = c.substring(1);
         }
-        cart = JSON.parse(json);
-        VariableSetter();
+        if (c.indexOf(name) == 0)
+        {
+            json = c.substring(name.length, c.length);
+        }
     }
+    cart = JSON.parse(json);
+    VariableSetter();
 }
 
 // Set count and total variables from cookie
