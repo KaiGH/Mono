@@ -128,7 +128,7 @@ function VariableSetter()
             if (value == pvalue)
             {
                 count++;
-                total += prices[index];
+                total += prices[pindex];
             }
         });
     });
